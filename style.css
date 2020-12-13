@@ -7,3 +7,171 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 
 .srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* Fonts
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+/* Global Styles */
+
+.wrapper {
+  max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+/* Header Styles */
+
+header {
+  background-color: black;
+  height: 100vh;
+}
+
+header p {
+  margin-top: 0;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.logoAndNavContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+header li a {
+  color: grey;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.headerTextContainer {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+header h2 {
+  color: rebeccapurple;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  padding: 5px 0;
+  font-size: 3rem;
+}
+
+header h2:nth-of-type(2) {
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header button {
+  border: 2px solid rebeccapurple;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rebeccapurple;
+  padding: 8px 30px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+/* Section 1 styles: whoAmI */
+
+.whoAmI {
+  background-color: rgb(24, 24, 24);
+  height: 100vh;
+}
+
+.whoAmI h3 {
+  margin-top: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 1rem;
+}
+
+.whoAmI h3::before {
+  content: '-------- ';
+}
+
+.whoAmI span {
+  color: rebeccapurple;
+}
+
+.whoAmI h2 {
+  color: rebeccapurple;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+
+.flexContainer1 {
+  display: flex;
+  justify-content: center;
+}
+
+.myPhoto {
+  box-shadow: -20px -20px rebeccapurple;
+}
+
+.myPhoto img {
+  height: 400px;
+  width: 350px;
+}
+
+.myText {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.whoAmI p:first-child {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.whoAmI p {
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.whoAmI button {
+  border: 2px solid rebeccapurple;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rebeccapurple;
+  padding: 8px 30px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+/* Section 2 styles: whatIDo */
+
+/* Section 3 styles: experience */
+
+/* Section 4 styles: portfolio */
+
+/* Section 5 styles: getInTouch */
+
+/* Footer Styles */
