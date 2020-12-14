@@ -55,8 +55,8 @@ header li a {
 }
 
 .headerTextContainer {
-  padding-top: 200px;
-  padding-bottom: 150px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 header h2 {
@@ -92,7 +92,7 @@ header button {
 
 .whoAmI {
   background-color: rgb(24, 24, 24);
-  height: 100vh;
+  height: 100%;
 }
 
 .whoAmI h3 {
@@ -135,7 +135,7 @@ header button {
 }
 
 .myText {
-  padding-left: 20px;
+  padding-left: 50px;
   width: 50%;
 }
 
@@ -166,12 +166,95 @@ header button {
   margin-top: 40px;
 }
 
+.skillsList li {
+  color: white;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+
+.skillsList {
+  text-align: center;
+  padding: 50px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 /* Section 2 styles: whatIDo */
 
 /* Section 3 styles: experience */
 
+.experience {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.experienceHeading {
+  margin-top: 0;
+} 
+
+.experience p:nth-of-type(6) {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+
 /* Section 4 styles: portfolio */
 
-/* Section 5 styles: getInTouch */
+.portfolio {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  text-align: center;
+}
 
-/* Footer Styles */
+.portfolioHeading {
+  margin-top: 0;
+}
+
+.portfolioPieces {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioPieces i {
+  font-size: 5rem;
+  color: grey;
+}
+
+/* Section 5 styles: Footer */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footerName {
+  margin-top: 0;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.namePlusInfo {
+  width: 30%;
+}
+
+.socialLinks i {
+  display: block;
+  color: white;
+  padding-top: 15px;
+}
+
+.copyright {
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
