@@ -26,6 +26,19 @@ body {
 
 /* Header Styles */
 
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skipLink:focus {
+    left: 0;
+}
+
 header {
   background-color: black;
   height: 100vh;
@@ -52,6 +65,15 @@ header li a {
   font-size: 0.7rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
+}
+
+header nav li {
+  display: inline;
+  padding: 25px;
+}
+
+header ul {
+  padding-top: 38px;
 }
 
 .headerTextContainer {
@@ -93,6 +115,7 @@ header button {
 .whoAmI {
   background-color: rgb(24, 24, 24);
   height: 100%;
+  padding-top: 80px;
 }
 
 .whoAmI h3 {
@@ -100,13 +123,10 @@ header button {
   color: white;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   font-size: 1rem;
 }
 
-.whoAmI h3::before {
-  content: '-------- ';
-}
 
 .whoAmI span {
   color: rebeccapurple;
@@ -125,18 +145,19 @@ header button {
   justify-content: center;
 }
 
-.myPhoto {
-  box-shadow: -20px -20px rebeccapurple;
-}
-
-.myPhoto img {
-  height: 400px;
-  width: 350px;
+.myPhoto,
+.myText {
+  width: 50%;
 }
 
 .myText {
-  padding-left: 50px;
-  width: 50%;
+  padding-left: 20px;
+}
+
+.myPhoto img {
+  box-shadow: -20px -20px rebeccapurple;
+  width: 100%;
+  height: 566px;
 }
 
 .whoAmI p:first-child {
@@ -179,6 +200,10 @@ header button {
   font-family: 'Montserrat', sans-serif;
 }
 
+hr {
+  margin-bottom: 50px;
+}
+
 
 /* Section 2 styles: whatIDo */
 
@@ -192,7 +217,44 @@ header button {
 
 .experienceHeading {
   margin-top: 0;
+  padding-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 } 
+
+.journey {
+  position: relative;
+  width: 250px;
+  margin: 0 calc(50% - 65px);
+}
+
+.journey::before {
+  content: '';  
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: -15px;
+  top: 50%;  
+}
+
+.experienceHeading span {
+  color: rebeccapurple;
+}
+
+.experience h2 {
+  color: rebeccapurple;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+.experience p:nth-of-type(1) {
+  color: grey;
+  padding-bottom: 30px;
+}
 
 .experience p:nth-of-type(6) {
   margin-bottom: 0;
@@ -206,10 +268,23 @@ header button {
   background-color: rgb(24, 24, 24);
   color: white;
   text-align: center;
+  padding-top: 50px;
 }
 
 .portfolioHeading {
   margin-top: 0;
+}
+
+.portfolioHeading span {
+  color: rebeccapurple;
+}
+
+.portfolio h2 {
+  color: rebeccapurple;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 30px;
 }
 
 .portfolioPieces {
@@ -220,6 +295,7 @@ header button {
 .portfolioPieces i {
   font-size: 5rem;
   color: grey;
+  margin: 50px 0;
 }
 
 /* Section 5 styles: Footer */
@@ -227,6 +303,15 @@ header button {
 footer {
   background-color: black;
   color: white;
+}
+
+footer h2 {
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  padding: 50px 0 30px 0;
+  color: rebeccapurple;
 }
 
 .footerName {
@@ -246,6 +331,7 @@ footer {
   display: block;
   color: white;
   padding-top: 15px;
+  font-size: 1rem;
 }
 
 .copyright {
