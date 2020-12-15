@@ -1,18 +1,30 @@
 // Namespacing
-// const portfolioSite = {};
+const portfolioSite = {};
 
-// // Initializer function
+// Initializer function
 
-// portfolioSite.init = () => {
-//   portfolioSite.eventListener();
-// }
+portfolioSite.init = () => {
+  portfolioSite.eventListener();
+}
 
-// portfolioSite.eventListener = () => {
+portfolioSite.eventListener = () => {
   
-// }
+}
 
-// $(function () {
-//   AOS.init({
-//     duration: 1200,
-//   });
-// })
+$(function () {
+  AOS.init({
+    duration: 1200,
+  });
+})
+
+
+$(document).ready(function () {
+  $(".menu-toggle").click(function () {
+    $(".menu-toggle").toggleClass("menu-open");
+    $(".menu").toggleClass("active");
+  });
+  $(".link").click(function () {
+    $(".menu-toggle").toggleClass("menu-open");
+    $(".menu").toggleClass("active");
+  });
+});

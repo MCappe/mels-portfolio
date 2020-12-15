@@ -20,9 +20,21 @@ body {
   font-size: 62.5%;
 }
 
-/* .darkMode {
+/* .dark-mode {
   background-color: white;
   color: black;
+} */
+
+/* .menuToggle {
+    top: 24px;
+    z-index: 2;
+    right: 30px;
+    width: 22px;
+    height: 20px;
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
 } */
 
 .journey {
@@ -69,6 +81,7 @@ header p {
   font-size: 1.6rem;
   font-weight: bold;
   padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .headerSocial {
@@ -89,7 +102,7 @@ header a {
   color: grey;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
@@ -110,14 +123,12 @@ header ul {
 }
 
 .headerTextContainer {
-  /* padding-top: 150px; */
   padding-bottom: 100px;
 }
 
 header h2:nth-of-type(1) {
   color: rebeccapurple;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 80px;
 }
 
 h1 {
@@ -211,6 +222,7 @@ header h2:nth-of-type(2) {
   box-shadow: -20px -20px rebeccapurple;
   width: 100%;
   height: auto;
+  /* border-radius: 25px; */
 }
 
 .whoAmI p:first-child {
@@ -325,14 +337,13 @@ hr {
 }
 
 .portfolioImage {
-  /* box-shadow: -20px -20px rebeccapurple; */
   width: 40%;
 }
 
 .portfolioImage img {
   width: 100%;
   object-fit: contain;
-  height: 400px;
+  border: 2px solid white;
 }
 
 .portfolioInfo {
@@ -341,7 +352,7 @@ hr {
   text-align: center;
 }
 
-.portfolioInfo a {
+.portfolioInfo > a {
   border: 2px solid rebeccapurple;
   text-decoration: none;
   border-radius: 25px;
@@ -367,11 +378,34 @@ hr {
 }
 
 .portfolioInfo p {
-  /* margin-top: 0; */
   font-size: 1rem;
   padding-bottom: 25px;
   color: grey;
+  line-height: 1.4rem;
 }
+
+.partnerURL {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0;
+}
+
+.next {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fa-arrow-circle-right {
+  color: white;
+  font-size: 3rem;
+  margin-top: 50px;
+}
+
+.fa-arrow-circle-right:hover,
+.fa-arrow-circle-right:focus {
+  color: rebeccapurple;
+} 
 
 /* Section 5 styles: Footer */
 
@@ -448,6 +482,18 @@ footer h2 {
 }
 
 /* Responsive */
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
 
 /* @media (max-width: 768px) {
     i.fa-bars{
