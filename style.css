@@ -252,7 +252,7 @@ hr {
 
 /* Section 3 styles: experience */
 
-.experience {
+/* .experience {
   background-color: black;
   color: white;
   text-align: center;
@@ -291,8 +291,10 @@ hr {
 .roleFive {
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 80px;
-  display: flex;
+  
 }
+
+
 
 .roleOne p,
 .roleTwo p,
@@ -317,13 +319,12 @@ hr {
 
 .roleFive h4 {
   margin-bottom: 50px;
-  /* padding-bottom: 80px; */
-}
+} */
 
 /* Section 4 styles: portfolio */
 
 .portfolio {
-  background-color: rgb(24, 24, 24);
+  background-color: black;
   color: white;
   text-align: center;
   padding-top: 50px;
@@ -421,7 +422,7 @@ hr {
 /* Section 5 styles: Footer */
 
 footer {
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   color: white;
 }
 
