@@ -24,6 +24,11 @@ body {
   font-size: 62.5%;
 }
 
+/* .darkMode {
+  background-color: white;
+  color: black;
+} */
+
 .journey {
   position: relative;
   width: 250px;
@@ -162,7 +167,7 @@ header button:focus {
   color: rebeccapurple;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 50px;
 }
 
@@ -183,7 +188,7 @@ header button:focus {
 .myPhoto img {
   box-shadow: -20px -20px rebeccapurple;
   width: 100%;
-  height: 566px;
+  height: auto;
 }
 
 .whoAmI p:first-child {
@@ -266,7 +271,7 @@ hr {
   color: rebeccapurple;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 30px;
 }
 
@@ -283,7 +288,8 @@ hr {
 .roleFour,
 .roleFive {
   font-family: 'Montserrat', sans-serif;
-  padding-bottom: 15px;
+  padding-bottom: 80px;
+  display: flex;
 }
 
 .roleOne p,
@@ -307,9 +313,9 @@ hr {
   padding: 10px;
 }
 
-.roleFive p {
-  margin-bottom: 0;
-  padding-bottom: 80px;
+.roleFive h4 {
+  margin-bottom: 50px;
+  /* padding-bottom: 80px; */
 }
 
 /* Section 4 styles: portfolio */
@@ -335,7 +341,7 @@ hr {
   color: rebeccapurple;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 30px;
 }
 
@@ -390,7 +396,7 @@ footer h2 {
   margin-top: 0;
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 50px 0 30px 0;
   color: rebeccapurple;
 }
