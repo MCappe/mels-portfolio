@@ -24,6 +24,23 @@ body {
   font-size: 62.5%;
 }
 
+.journey {
+  position: relative;
+  width: 250px;
+  margin: 0 calc(50% - 65px);
+}
+
+.journey::before {
+  content: '';  
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: -20px;
+  top: 50%;  
+}
+
 /* Header Styles */
 
 .skipLink {
@@ -48,7 +65,7 @@ header p {
   margin-top: 0;
   color: white;
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: bold;
   padding-top: 40px;
 }
@@ -58,7 +75,7 @@ header p {
   justify-content: space-between;
 }
 
-header li a {
+header a {
   color: grey;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -67,13 +84,19 @@ header li a {
   letter-spacing: 0.1rem;
 }
 
+header a:hover,
+header a:focus {
+  padding-bottom: 5px;
+  border-bottom: 3px solid rebeccapurple;
+}
+
 header nav li {
   display: inline;
   padding: 25px;
 }
 
 header ul {
-  padding-top: 38px;
+  padding-top: 40px;
 }
 
 .headerTextContainer {
@@ -110,6 +133,11 @@ header button {
   cursor: pointer;
 }
 
+header button:hover,
+header button:focus {
+  color: white;
+}
+
 /* Section 1 styles: whoAmI */
 
 .whoAmI {
@@ -123,10 +151,8 @@ header button {
   color: white;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  /* padding-top: 80px; */
   font-size: 1rem;
 }
-
 
 .whoAmI span {
   color: rebeccapurple;
@@ -174,8 +200,13 @@ header button {
   font-size: 1rem;
 }
 
-.whoAmI button {
+.whoAmI p:nth-of-type(3) {
+  padding-bottom: 40px;  
+}
+
+.whoAmI a {
   border: 2px solid rebeccapurple;
+  text-decoration: none;
   border-radius: 25px;
   background-color: transparent;
   color: rebeccapurple;
@@ -184,7 +215,11 @@ header button {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
-  margin-top: 40px;
+}
+
+.whoAmI a:hover,
+.whoAmI a:focus {
+  color: white;
 }
 
 .skillsList li {
@@ -198,6 +233,7 @@ header button {
   text-align: center;
   padding: 50px 0;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 }
 
 hr {
@@ -222,23 +258,6 @@ hr {
   font-size: 1rem;
 } 
 
-.journey {
-  position: relative;
-  width: 250px;
-  margin: 0 calc(50% - 65px);
-}
-
-.journey::before {
-  content: '';  
-  display: block;
-  width: 80px;
-  height: 2px;
-  background: white;
-  position: absolute;
-  left: -15px;
-  top: 50%;  
-}
-
 .experienceHeading span {
   color: rebeccapurple;
 }
@@ -251,16 +270,47 @@ hr {
   padding-bottom: 30px;
 }
 
-.experience p:nth-of-type(1) {
+.experienceTop p {
   color: grey;
   padding-bottom: 30px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.experience p:nth-of-type(6) {
+.roleOne,
+.roleTwo,
+.roleThree,
+.roleFour,
+.roleFive {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 15px;
+}
+
+.roleOne p,
+.roleTwo p,
+.roleThree p,
+.roleFour p,
+.roleFive p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.roleOne h4,
+.roleTwo h4,
+.roleThree h4,
+.roleFour h4,
+.roleFive h4 {
+  width: 130px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  border: 3px solid rebeccapurple;
+  padding: 10px;
+}
+
+.roleFive p {
   margin-bottom: 0;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
-
 
 /* Section 4 styles: portfolio */
 
@@ -273,6 +323,8 @@ hr {
 
 .portfolioHeading {
   margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 }
 
 .portfolioHeading span {
@@ -287,6 +339,11 @@ hr {
   padding-bottom: 30px;
 }
 
+.portfolio p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
 .portfolioPieces {
   display: flex;
   justify-content: space-between;
@@ -296,6 +353,30 @@ hr {
   font-size: 5rem;
   color: grey;
   margin: 50px 0;
+}
+
+/* Portfolio Pages Styling */
+
+.portfolioShowcase {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.portfolioImage {
+  /* box-shadow: -20px -20px rebeccapurple; */
+  width: 40%;
+}
+
+.portfolioImage img {
+  width: 100%;
+  object-fit: contain;
+  height: 400px;
+}
+
+.portfolioInfo {
+  width: 50%;
+  padding-left: 50px;
 }
 
 /* Section 5 styles: Footer */
@@ -316,28 +397,56 @@ footer h2 {
 
 .footerName {
   margin-top: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.namePlusInfo p:nth-of-type(2) {
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
 }
 
 .contactSection {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 30px;
 }
 
 .namePlusInfo {
   width: 30%;
 }
 
+.myAddress {
+  width: 30%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.socialLinks a {
+  width: 30%;
+  text-decoration: none;
+}
+
+
 .socialLinks i {
   display: block;
-  color: white;
+  color: rebeccapurple;
   padding-top: 15px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.socialLinks i:hover,
+.socialLinks i:focus {
+  color: white;
 }
 
 .copyright {
   margin-bottom: 0;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 25px;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
