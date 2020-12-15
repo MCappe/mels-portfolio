@@ -89,7 +89,7 @@ header a {
   color: grey;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
@@ -266,6 +266,7 @@ header h2:nth-of-type(2) {
 .skillsList li:hover,
 .skillsList li:focus {
   color: rebeccapurple;
+  /* cursor: pointer; */
 }
 
 hr {
