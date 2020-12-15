@@ -8,10 +8,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* Fonts
-font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif; */
-
 /* Global Styles */
 
 .wrapper {
@@ -126,9 +122,10 @@ header h2:nth-of-type(2) {
   font-family: 'Montserrat', sans-serif;
 }
 
-header button {
+.resumeDownload {
   border: 2px solid rebeccapurple;
   border-radius: 25px;
+  text-decoration: none;
   background-color: transparent;
   color: rebeccapurple;
   padding: 8px 30px;
@@ -138,8 +135,8 @@ header button {
   cursor: pointer;
 }
 
-header button:hover,
-header button:focus {
+.resumeDownload:hover,
+.resumeDownload:focus {
   color: white;
 }
 
@@ -238,7 +235,12 @@ header button:focus {
   text-align: center;
   padding: 50px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+.skillsList li:hover,
+.skillsList li:focus {
+  color: rebeccapurple;
 }
 
 hr {
@@ -383,6 +385,37 @@ hr {
 .portfolioInfo {
   width: 50%;
   padding-left: 50px;
+  text-align: center;
+}
+
+.portfolioInfo a {
+  border: 2px solid rebeccapurple;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rebeccapurple;
+  padding: 8px 30px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.portfolioInfo a:hover,
+.portfolioInfo a:focus {
+  color: white;
+}
+
+.portfolioInfo h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.portfolioInfo p {
+  font-size: 1rem;
+  padding-bottom: 25px;
+  color: grey;
 }
 
 /* Section 5 styles: Footer */
@@ -459,3 +492,31 @@ footer h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Responsive */
+
+/* @media (max-width: 768px) {
+    i.fa-bars{
+        visibility: visible;
+        font-size: 3rem;
+        transform: scale(1.5,1);
+        color: white;
+    }
+
+    input:checked + nav {
+        display: block;
+        z-index: 99999;   
+    }
+
+
+    .check {
+        visibility: hidden;
+    }
+
+    header nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 20px;
+        display: none;
+    }
+} */
