@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
   
 </head>
 
@@ -44,12 +46,13 @@
         <h1>I'M MELISSA CAPPE</h1>
         <h2>FRONT - END DEVELOPER</h2>
       </div>
-      <a href="./melissaCappeResume.pdf" target="_blank" class="resumeDownload">DOWNLOAD CV</a>
+      <a href="./melissaCappeResume.pdf" target="_blank" class="resumeDownload">RESUME</a>
     </div>
-    <div class="scrollDown">
+    <!-- <div class="scrollDown">
     <a href="#about"><i class="fas fa-angle-down animate__animated animate__fadeInDown animate__slow 2s animate__infinite 	infinite"></i></a>
-    </div>
+    </div> -->
   </header>
+
   <main>
     <section class="whoAmI" id="about">
       <div class="wrapper">
@@ -84,7 +87,7 @@
               <li><i class="fab fa-github" title="Github"></i></li>
               <li><i class="fab fa-git-alt" title="Git"></i></li>
               <li><i class="fab fa-sass" title="SASS"></i></li>
-              <li title="jQuery">jQuery</li>
+              <li title="jQuery"><i class="devicon-jquery-plain"></i></li>
               <li title="Rest APIs">APIs</li>
               <li title="Firebase">Firebase</li>
               <li><i class="fas fa-mobile-alt" title="Responsive Design"></i></li>
@@ -132,13 +135,11 @@
       <div class="contactSection">
         <div class="namePlusInfo">
           <p class="footerName">Melissa</p>
-          <p>If you were interested in grabbing a (virtual) coffee to discuss my work further, I'd be totally down. Feel free to reach out to me via social media or by emailing me directly. I look forward to collaborating with you!</p>
-        </div>
-        <div class="myAddress">
-          <p>Address</p>
-          <p>Phone: (416) 560-5100</p>
-          <p>Email: melissacappe@gmail.com</p>
-          <p>Toronto, Ontario</p>
+          <p>If you are interested in grabbing a (virtual) coffee, I'm totally down! Feel free to reach out to me via social media or by emailing me directly. I look forward to collaborating with you!</p>
+          <!-- <p>Address</p> -->
+          <p class="contactInfo">Phone: (416) 560-5100</p>
+          <p class="contactInfo">Email: melissacappe@gmail.com</p>
+          <p class="contactInfo">Toronto, Ontario</p>
         </div>
         <div class="socialLinks">
           <a href="https://twitter.com/MelissaCappe" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -146,12 +147,23 @@
           <a href="https://www.linkedin.com/in/melissacappe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="mailto:melissacappe@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
+        <div class="form">
+          <form action="#" method="#" class="myForm" name="myForm">
+            <label for="userName" class="srOnly">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="userEmail" class="srOnly">Email address</label>
+            <input type="email" id="userEmail" name="emailAddress" placeholder="Email address">
+            <label for="message" class="srOnly">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10">Message</textarea>
+            <button>SUBMIT</button>
+          </form>
+        </div>
+        
       </div>
       <hr />
       <p class="copyright">© Melissa Cappe | 2020</p>
     </div>
   </footer>
-
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="script.js"></script>
@@ -169,3 +181,4 @@
   </script>
 </body>
 </html>
+

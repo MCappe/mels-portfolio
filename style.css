@@ -71,7 +71,7 @@ body {
 
 header {
   background-color: black;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header p {
@@ -219,10 +219,10 @@ header h2:nth-of-type(2) {
 }
 
 .myPhoto img {
-  box-shadow: -20px -20px rebeccapurple;
+  /* box-shadow: -20px -20px rebeccapurple; */
+  border: 10px double rebeccapurple;
   width: 100%;
   height: auto;
-  /* border-radius: 25px; */
 }
 
 .whoAmI p:first-child {
@@ -330,6 +330,10 @@ hr {
 
 /* Portfolio Pages Styling */
 
+.portfolioPages {
+  height: 100vh;
+}
+
 .portfolioShowcase {
   display: flex;
   justify-content: center;
@@ -377,9 +381,16 @@ hr {
   font-family: 'Playfair Display', serif;
 }
 
+h5 {
+  color: grey;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  padding-bottom: 0;
+}
+
 .portfolioInfo p {
   font-size: 1rem;
-  padding-bottom: 25px;
+  padding: 0 0 25px 0;
   color: grey;
   line-height: 1.4rem;
 }
@@ -433,7 +444,13 @@ footer h2 {
 .namePlusInfo p:nth-of-type(2) {
   color: grey;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+}
+
+.contactInfo {
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
 }
 
 .contactSection {
@@ -443,18 +460,18 @@ footer h2 {
 }
 
 .namePlusInfo {
-  width: 30%;
+  width: 33%;
 }
 
-.myAddress {
-  width: 30%;
+/* .myAddress {
+  width: 25%;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
   color: grey;
-}
+} */
 
 .socialLinks a {
-  width: 30%;
+  width: 33%;
   text-decoration: none;
 }
 
@@ -469,6 +486,60 @@ footer h2 {
 .socialLinks i:hover,
 .socialLinks i:focus {
   color: white;
+}
+
+.form {
+  width: 33%;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    color: black;
+    border: 2px solid rebeccapurple;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+    color: grey;
+    border: 2px solid rebeccapurple;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    width: 100%;
+    margin: 10px 0 0px 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid rebeccapurple;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+button:hover,
+button:focus {
+    background-color: rebeccapurple;
+    color: white;
+    border: 2px solid white;
 }
 
 .copyright {
