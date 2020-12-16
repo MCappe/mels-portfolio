@@ -372,7 +372,7 @@ hr {
 /* Portfolio Pages Styling */
 
 .portfolioPages {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .portfolioShowcase {
@@ -595,6 +595,35 @@ button:focus {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+
+  .portfolioShowcase {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .portfolioImage {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .portfolioInfo {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  /* .live,
+  .github {
+    display: block;
+    width: 50%;
+  }
+
+  a.live,
+  a.github {
+    margin-bottom: 10px;
+    justify-content: center;
+  } */
 }
 
 /* Landscape phone to portrait tablet */
@@ -607,6 +636,7 @@ button:focus {
 
   .skillsList li {
     display: block;
+    font-size: 3rem;
   }
 
   .portfolioPieces {
@@ -616,6 +646,22 @@ button:focus {
   .contactSection {
     flex-direction: column;
     align-items: center;
+  }
+
+  .namePlusInfo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .socialLinks i {
+    display: inline-block;
+    padding: 20px;
+    font-size: 2rem;
+  }
+
+  .form {
+    width: 100%;
+    margin-top: 20px;
   }
 
   .headerNav {
