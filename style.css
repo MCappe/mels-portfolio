@@ -39,6 +39,10 @@ body {
   top: 50%;  
 }
 
+.portfolio .journey::before {
+  left: -38px;
+}
+
 :root {
   --bg-colour: black;
   --secondary-bg-colour: rgb(24, 24, 24);
@@ -94,9 +98,9 @@ header p {
   font-size: 1rem;
 }
 
-#hamburger{
-  display: none;
-}
+/* #hamburger{
+  opacity: 0;
+} */
 
 .fa-bars {
   position: absolute;
@@ -119,7 +123,7 @@ header a {
   color: var(--secondary-font-colour);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
@@ -138,6 +142,23 @@ header nav li {
 header ul {
   padding-top: 40px;
 }
+
+.navItem {
+  cursor: pointer;
+  color: var(--secondary-font-colour);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.navItem:hover,
+.navItem:focus {
+  color: var(--header-font-colour);
+}
+
+
 
 .headerTextContainer {
   padding-bottom: 100px;
@@ -577,28 +598,62 @@ button:focus {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  header nav {
-    position: absolute;
+@media (max-width: 840px) {
+  .flexContainer1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .skillsList li {
+    display: block;
+  }
+
+  .portfolioPieces {
+    flex-direction: column;
+  }
+
+  .contactSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerNav {
     display: none;
   }
 
   .fa-bars {
     visibility: visible;
+    position: fixed;
+    z-index: 10;
   }
 
-  header input:checked + header nav {
-    display: block;
-    position: relative;
+  .headerNav2 {
+    width: 30%;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    /* bottom: 20px; */
+    /* text-align: right; */
+    /* border: 2px solid red; */
   }
 
-  #hamburger {
-    position: absolute;
-    right: -1000000px;
+  .headerNav2 li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  color: rebeccapurple;
 }
