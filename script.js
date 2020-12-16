@@ -28,3 +28,5 @@ $(document).ready(function () {
     $(".menu").toggleClass("active");
   });
 });
+
+document.getElementById("myForm").reset(); 
