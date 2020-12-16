@@ -15,6 +15,19 @@ $(function () {
   AOS.init({
     duration: 1200,
   });
+  
+  // Dark/light toggle
+  const toggle = document.querySelector("#toggle");
+  toggle.addEventListener("click", modeSwitch);
+
+  let isLight = true;
+
+  function modeSwitch() {
+    isLight = !isLight;
+    isLight ? toggle.innerText = "🌞" : toggle.innerText = "🌚";
+    const rootElement = document.body;
+    rootElement.classList.toggle("lightMode");
+  }
 })
 
 // Hamburger menu
@@ -32,15 +45,4 @@ $(document).ready(function () {
 // Form reset
 document.getElementById("myForm").reset(); 
 
-// Dark/light toggle
-const toggle = document.querySelector("#toggle");
-toggle.addEventListener("click", modeSwitch);
 
-let isLight = true;
-
-function modeSwitch() {
-  isLight = !isLight;
-  isLight ? toggle.innerText = "🌞" : toggle.innerText = "🌚";
-  const rootElement = document.body;
-  rootElement.classList.toggle("lightMode");
-}

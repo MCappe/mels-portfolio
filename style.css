@@ -49,9 +49,9 @@ body {
 
 .lightMode {
   --bg-colour: white;
-  --secondary-bg-colour: white;
+  --secondary-bg-colour: rgb(238, 233, 233);
   --font-colour: black;
-  --secondary-font-colour: grey;
+  --secondary-font-colour: rgb(45, 43, 43);
   --header-font-colour: rebeccapurple;
 }
 
