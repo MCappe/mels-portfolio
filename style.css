@@ -22,23 +22,6 @@ body {
   letter-spacing: 1.5px;
 }
 
-/* .dark-mode {
-  background-color: white;
-  color: black;
-} */
-
-/* .menuToggle {
-    top: 24px;
-    z-index: 2;
-    right: 30px;
-    width: 22px;
-    height: 20px;
-    padding: 8px 0;
-    cursor: pointer;
-    border-radius: 50%;
-    position: absolute;
-} */
-
 .journey {
   position: relative;
   width: 250px;
@@ -50,10 +33,26 @@ body {
   display: block;
   width: 80px;
   height: 2px;
-  background: white;
+  background: var(--font-colour);
   position: absolute;
   left: -20px;
   top: 50%;  
+}
+
+:root {
+  --bg-colour: black;
+  --secondary-bg-colour: rgb(24, 24, 24);
+  --font-colour: white;
+  --secondary-font-colour: lightgrey;
+  --header-font-colour: rebeccapurple;
+}
+
+.lightMode {
+  --bg-colour: white;
+  --secondary-bg-colour: white;
+  --font-colour: black;
+  --secondary-font-colour: grey;
+  --header-font-colour: rebeccapurple;
 }
 
 /* Header Styles */
@@ -63,8 +62,8 @@ body {
     left: -1000px;
     top: 5px;
     z-index: 999;
-    background: white;
-    color: black;
+    background: var(--font-colour);
+    color: var(--bg-colour);
 }
 
 .skipLink:focus {
@@ -72,13 +71,13 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color: var(--bg-colour);
   min-height: 100vh;
 }
 
 header p {
   margin-top: 0;
-  color: white;
+  color: var(--font-colour);
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   font-weight: bold;
@@ -101,7 +100,7 @@ header p {
 }
 
 header a {
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.7rem;
@@ -112,7 +111,7 @@ header a {
 header li a:hover,
 header li a:focus {
   padding-bottom: 5px;
-  border-bottom: 3px solid rebeccapurple;
+  border-bottom: 3px solid var(--header-font-colour);
 }
 
 header nav li {
@@ -129,28 +128,28 @@ header ul {
 }
 
 header h2:nth-of-type(1) {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
   font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-  color: white;
+  color: var(--font-colour);
   font-family: 'Playfair Display', serif;
   padding: 5px 0;
   font-size: 3rem;
 }
 
 header h2:nth-of-type(2) {
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   font-family: 'Montserrat', sans-serif;
 }
 
 .resumeDownload {
-  border: 2px solid rebeccapurple;
+  border: 2px solid var(--header-font-colour);
   border-radius: 25px;
   text-decoration: none;
   background-color: transparent;
-  color: rebeccapurple;
+  color: var(--header-font-colour);
   padding: 8px 30px;
   font-size: 0.7rem;
   font-weight: bold;
@@ -160,18 +159,18 @@ header h2:nth-of-type(2) {
 
 .resumeDownload:hover,
 .resumeDownload:focus {
-  color: white;
+  color: var(--font-colour);
 }
 
 .fa-angle-down {
-  color: white;
+  color: var(--font-colour);
   font-size: 2.8rem;
   margin-top: 150px;
 }
 
 .fa-angle-down:hover,
 .fa-angle-down:focus {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
 }
 
 .scrollDown {
@@ -181,25 +180,25 @@ header h2:nth-of-type(2) {
 /* Section 1 styles: whoAmI */
 
 .whoAmI {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--secondary-bg-colour);
   height: 100%;
   padding-top: 80px;
 }
 
 .whoAmI h3 {
   margin-top: 0;
-  color: white;
+  color: var(--font-colour);
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 1rem;
 }
 
 .whoAmI span {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
 }
 
 .whoAmI h2 {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
   font-family: 'Playfair Display', serif;
   text-align: center;
   font-size: 2.5rem;
@@ -221,14 +220,13 @@ header h2:nth-of-type(2) {
 }
 
 .myPhoto img {
-  /* box-shadow: -20px -20px rebeccapurple; */
-  border: 10px double rebeccapurple;
+  border: 10px double var(--header-font-colour);
   width: 100%;
   height: auto;
 }
 
 .whoAmI p:first-child {
-  color: white;
+  color: var(--font-colour);
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 40px;
   font-size: 1.2rem;
@@ -236,7 +234,7 @@ header h2:nth-of-type(2) {
 }
 
 .whoAmI p {
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
@@ -250,7 +248,7 @@ header h2:nth-of-type(2) {
   text-decoration: none;
   border-radius: 25px;
   background-color: transparent;
-  color: rebeccapurple;
+  color: var(--header-font-colour);
   padding: 8px 30px;
   font-size: 0.7rem;
   font-weight: bold;
@@ -260,11 +258,11 @@ header h2:nth-of-type(2) {
 
 .whoAmI a:hover,
 .whoAmI a:focus {
-  color: white;
+  color: var(--font-colour);
 }
 
 .skillsList li {
-  color: white;
+  color: var(--font-colour);
   list-style: none;
   display: inline;
   padding: 10px;
@@ -279,8 +277,7 @@ header h2:nth-of-type(2) {
 
 .skillsList li:hover,
 .skillsList li:focus {
-  color: rebeccapurple;
-  /* cursor: pointer; */
+  color: var(--header-font-colour);
 }
 
 hr {
@@ -290,8 +287,8 @@ hr {
 /* Section 4 styles: portfolio */
 
 .portfolio {
-  background-color: black;
-  color: white;
+  background-color: var(--bg-colour);
+  color: var(--font-colour);
   text-align: center;
   padding-top: 50px;
 }
@@ -303,11 +300,11 @@ hr {
 }
 
 .portfolioHeading span {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
 }
 
 .portfolio h2 {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
   font-family: 'Playfair Display', serif;
   text-align: center;
   font-size: 2.5rem;
@@ -326,13 +323,13 @@ hr {
 
 .portfolioPieces i {
   font-size: 5rem;
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   margin: 50px 0;
 }
 
 .portfolioPieces i:hover,
 .portfolioPieces i:focus {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
 }
 
 /* Portfolio Pages Styling */
@@ -354,7 +351,7 @@ hr {
 .portfolioImage img {
   width: 100%;
   object-fit: contain;
-  border: 2px solid white;
+  border: 2px solid var(--font-colour);
 }
 
 .portfolioInfo {
@@ -364,11 +361,11 @@ hr {
 }
 
 .portfolioInfo > a {
-  border: 2px solid rebeccapurple;
+  border: 2px solid var(--header-font-colour);
   text-decoration: none;
   border-radius: 25px;
   background-color: transparent;
-  color: rebeccapurple;
+  color: var(--header-font-colour);
   padding: 8px 30px;
   font-size: 0.7rem;
   font-weight: bold;
@@ -379,7 +376,7 @@ hr {
 
 .portfolioInfo a:hover,
 .portfolioInfo a:focus {
-  color: white;
+  color: var(--font-colour);
 }
 
 .portfolioInfo h2 {
@@ -390,7 +387,7 @@ hr {
 }
 
 h5 {
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   padding-bottom: 0;
@@ -399,7 +396,7 @@ h5 {
 .portfolioInfo p {
   font-size: 1rem;
   padding: 0 0 25px 0;
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   line-height: 1.4rem;
   font-family: 'Montserrat', sans-serif;
 }
@@ -407,7 +404,7 @@ h5 {
 .partnerURL {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  color: white;
+  color: var(--font-colour);
   letter-spacing: 0;
 }
 
@@ -418,7 +415,7 @@ h5 {
 
 .fa-arrow-circle-right,
 .fa-arrow-circle-left {
-  color: white;
+  color: var(--font-colour);
   font-size: 3rem;
   margin-top: 50px;
   padding: 10px;
@@ -428,14 +425,14 @@ h5 {
 .fa-arrow-circle-right:focus,
 .fa-arrow-circle-left:hover,
 .fa-arrow-circle-left:focus {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
 } 
 
 /* Section 5 styles: Footer */
 
 footer {
-  background-color: rgb(24, 24, 24);
-  color: white;
+  background-color: var(--secondary-bg-colour);
+  color: var(--font-colour);
 }
 
 footer h2 {
@@ -444,7 +441,7 @@ footer h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   padding: 50px 0 30px 0;
-  color: rebeccapurple;
+  color: var(--header-font-colour);
 }
 
 .footerName {
@@ -455,13 +452,13 @@ footer h2 {
 }
 
 .namePlusInfo p:nth-of-type(2) {
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.7rem;
 }
 
 .contactInfo {
-  color: lightgrey;
+  color: var(--secondary-font-colour);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
 }
@@ -476,13 +473,6 @@ footer h2 {
   width: 33%;
 }
 
-/* .myAddress {
-  width: 25%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
-  color: lightgrey;
-} */
-
 .socialLinks a {
   width: 33%;
   text-decoration: none;
@@ -491,14 +481,14 @@ footer h2 {
 
 .socialLinks i {
   display: block;
-  color: rebeccapurple;
+  color: var(--header-font-colour);
   padding-top: 15px;
   font-size: 1.2rem;
 }
 
 .socialLinks i:hover,
 .socialLinks i:focus {
-  color: white;
+  color: var(--font-colour);
 }
 
 .form {
@@ -515,8 +505,8 @@ input {
     margin-bottom: 10px;
     border: none;
     width: 100%;
-    color: black;
-    border: 2px solid rebeccapurple;
+    color: var(--bg-colour);
+    border: 2px solid var(--header-font-colour);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
 }
@@ -527,7 +517,7 @@ textarea {
     border: none;
     padding: 10px 10px;
     letter-spacing: 1px;
-    border: 2px solid rebeccapurple;
+    border: 2px solid var(--header-font-colour);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -536,7 +526,7 @@ button {
     margin: 10px 0 0px 0;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 2px solid rebeccapurple;
+    border: 2px solid var(--header-font-colour);
     letter-spacing: 1px;
     cursor: pointer;
     border-radius: 25px;
@@ -549,9 +539,9 @@ textarea:hover,
 textarea:focus,
 button:hover,
 button:focus {
-    background-color: rebeccapurple;
-    color: white;
-    border: 2px solid white;
+    background-color: var(--header-font-colour);
+    color: var(--font-colour);
+    border: 2px solid var(--font-colour);
 }
 
 .copyright {
