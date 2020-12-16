@@ -94,6 +94,22 @@ header p {
   font-size: 1rem;
 }
 
+#hamburger{
+  display: none;
+}
+
+.fa-bars {
+  position: absolute;
+  color: var(--font-colour);
+  font-size: 2rem;
+  right: 0;
+  top: 0;
+  padding: 25px;
+  max-width: 100px;
+  max-height: 100px;
+  visibility: hidden;
+}
+
 .logoAndNavContainer {
   display: flex;
   justify-content: space-between;
@@ -562,35 +578,27 @@ button:focus {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  header nav {
+    position: absolute;
+    display: none;
+  }
+
+  .fa-bars {
+    visibility: visible;
+  }
+
+  header input:checked + header nav {
+    display: block;
+    position: relative;
+  }
+
+  #hamburger {
+    position: absolute;
+    right: -1000000px;
+  }
+
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 }
-
-/* @media (max-width: 768px) {
-    i.fa-bars{
-        visibility: visible;
-        font-size: 3rem;
-        transform: scale(1.5,1);
-        color: white;
-    }
-
-    input:checked + nav {
-        display: block;
-        z-index: 99999;   
-    }
-
-
-    .check {
-        visibility: hidden;
-    }
-
-    header nav {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        padding: 20px;
-        display: none;
-    }
-} */
