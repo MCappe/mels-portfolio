@@ -780,8 +780,8 @@ button:focus {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  footer {
-    height: 100%;
+  .form {
+    display: none;
   }
 
 }
