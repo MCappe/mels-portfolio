@@ -129,7 +129,7 @@ header a {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;  
 }
 
 header li a:hover,
@@ -242,6 +242,7 @@ header h2:nth-of-type(2) {
   color: var(--header-font-colour);
   font-family: 'Playfair Display', serif;
   text-align: center;
+  line-height: 2rem;
   font-size: 2.5rem;
   padding-bottom: 50px;
 }
@@ -509,13 +510,13 @@ footer {
   color: var(--font-colour);
 }
 
-footer h2 {
+.contact h2 {
   margin-top: 0;
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   padding: 50px 0 30px 0;
-  color: var(--font-colour);
+  color: var(--header-font-colour);
 }
 
 .footerName {
@@ -630,8 +631,9 @@ textarea:hover,
 textarea:focus,
 button:hover,
 button:focus {
-    background-color: var(--header-font-colour);
-    color: var(--font-colour);
+    background-color: var(--secondary-font-colour);
+    color: var(--bg-colour);
+    font-weight: bold;
     border: 2px solid var(--font-colour);
 }
 
@@ -723,6 +725,7 @@ button:focus {
   .socialLinks i {
     display: inline-block;
     font-size: 2rem;
+    letter-spacing: 2rem;
   }
 
   .form {
@@ -746,7 +749,7 @@ button:focus {
     z-index: 5;
     right: 0;
   }
-
+  
   .headerNav2 li {
     display: flex;
     flex-direction: column;

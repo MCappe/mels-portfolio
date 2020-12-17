@@ -8,24 +8,24 @@ $(function () {
   $('#bars').on('click', () => {
     console.log('clicked');
     
-    $('.headerNav2').toggleClass("hidden");
+    $('.headerNav2').toggleClass('hidden');
     $('#bars').toggleClass('highlight');
   })
   
   // Dark/light toggle
-  let toggle = document.querySelector("#toggle");
-  toggle.addEventListener("click", modeSwitch);
+  let toggle = document.querySelector('#toggle');
+  toggle.addEventListener('click', modeSwitch);
 
-  toggle = document.querySelector("#toggle2");
-  toggle.addEventListener("click", modeSwitch);
+  toggle = document.querySelector('#toggle2');
+  toggle.addEventListener('click', modeSwitch);
 
   let isLight = true;
 
   function modeSwitch() {
     isLight = !isLight;
-    isLight ? toggle.innerText = "Light" : toggle.innerText = "Dark";
+    isLight ? toggle.innerText = '🌞' : toggle.innerText = '🌚';
     const rootElement = document.body;
-    rootElement.classList.toggle("lightMode");
+    rootElement.classList.toggle('lightMode');
   }
 })
 
