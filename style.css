@@ -733,6 +733,10 @@ button:focus {
     padding-left: 0;
   }
 
+  .skillsList ul {
+    padding-left: 0;
+  }
+
   .portfolioPieces {
     flex-direction: column;
   }
@@ -785,5 +789,9 @@ button:focus {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  footer {
+    height: 100vh;
+  }
+
 }
 
