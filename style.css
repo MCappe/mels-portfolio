@@ -98,9 +98,13 @@ header p {
   font-size: 1rem;
 }
 
-/* #hamburger{
-  opacity: 0;
-} */
+.hidden {
+  display: none;
+}
+
+.highlight {
+  color: rebeccapurple;
+}
 
 .fa-bars {
   position: absolute;
@@ -257,9 +261,29 @@ header h2:nth-of-type(2) {
 }
 
 .myPhoto img {
-  border: 10px double var(--header-font-colour);
   width: 100%;
   height: auto;
+}
+
+.myPhoto {
+  padding: 10px;
+  position: relative;
+}
+
+.myPhoto * {
+  position: relative;
+}
+
+.myPhoto::before {
+  content: '';
+  background-color: transparent;
+  border: 3px solid rebeccapurple;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
 }
 
 .whoAmI p:first-child {
@@ -309,7 +333,7 @@ header h2:nth-of-type(2) {
   text-align: center;
   padding: 50px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 .skillsList li:hover,
@@ -388,7 +412,6 @@ hr {
 .portfolioImage img {
   width: 100%;
   object-fit: contain;
-  border: 2px solid var(--font-colour);
 }
 
 .portfolioInfo {
@@ -442,7 +465,7 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: var(--font-colour);
-  letter-spacing: 0;
+  letter-spacing: 1;
 }
 
 .next {
@@ -465,6 +488,20 @@ h5 {
   color: var(--header-font-colour);
 } 
 
+.portfolioPagesFooter {
+  padding-top: 20px;
+}
+
+.portfolioPagesFooter a {
+  color: var(--font-colour);
+  text-decoration: none;
+}
+
+.portfolioPagesFooter a:hover,
+.portfolioPagesFooter a:focus {
+  color: var(--header-font-colour);
+} 
+
 /* Section 5 styles: Footer */
 
 footer {
@@ -478,7 +515,7 @@ footer h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   padding: 50px 0 30px 0;
-  color: var(--header-font-colour);
+  color: var(--font-colour);
 }
 
 .footerName {
@@ -488,10 +525,25 @@ footer h2 {
   font-weight: bold;
 }
 
-.namePlusInfo p:nth-of-type(2) {
+.namePlusInfo  {
   color: var(--secondary-font-colour);
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
+}
+
+.namePlusInfo p:first-of-type {
+  color: var(--font-colour);
+}
+
+.namePlusInfo a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--header-font-colour);
+}
+
+.namePlusInfo a:hover,
+.namePlusInfo a:focus {
+  color: var(--secondary-font-colour);
 }
 
 .contactInfo {
@@ -520,7 +572,7 @@ footer h2 {
   display: block;
   color: var(--header-font-colour);
   padding-top: 15px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .socialLinks i:hover,
@@ -565,6 +617,8 @@ button {
     padding-bottom: 5px;
     border: 2px solid var(--header-font-colour);
     letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
@@ -589,6 +643,7 @@ button:focus {
   letter-spacing: 0.1rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
 }
 
 /* Responsive */
@@ -612,31 +667,43 @@ button:focus {
     text-align: center;
     padding-left: 0;
   }
-
-  /* .live,
-  .github {
-    display: block;
-    width: 50%;
-  }
-
-  a.live,
-  a.github {
-    margin-bottom: 10px;
-    justify-content: center;
-  } */
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 840px) {
+  header h1,
+  header h2 {
+    text-align: center;
+  }
+
+  header h1 {
+    line-height: 3rem;
+  }
+
+  a.resumeDownload {
+    display: flex;
+    justify-content: center;
+  }
+
   .flexContainer1 {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
+  .myPhoto {
+    width: 80%;
+  }
+
+  .myText {
+    width: 70%;
+    text-align: center;
+  }
+
   .skillsList li {
     display: block;
     font-size: 3rem;
+    padding-left: 0;
   }
 
   .portfolioPieces {
@@ -655,7 +722,6 @@ button:focus {
 
   .socialLinks i {
     display: inline-block;
-    padding: 20px;
     font-size: 2rem;
   }
 
@@ -679,9 +745,6 @@ button:focus {
     position: fixed;
     z-index: 5;
     right: 0;
-    /* bottom: 20px; */
-    /* text-align: right; */
-    /* border: 2px solid red; */
   }
 
   .headerNav2 li {
