@@ -1,4 +1,3 @@
-
 $(function () {
   AOS.init({
     duration: 1200,
@@ -27,9 +26,9 @@ $(function () {
     const rootElement = document.body;
     rootElement.classList.toggle('lightMode');
   }
-})
 
-// Form reset
-// document.getElementById("myForm").reset(); 
+  // $('.myForm').reset();
+
+})
 
 

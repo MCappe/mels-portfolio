@@ -22,6 +22,22 @@ body {
   letter-spacing: 1.5px;
 }
 
+:root {
+  --bg-colour: black;
+  --secondary-bg-colour: rgb(24, 24, 24);
+  --font-colour: white;
+  --secondary-font-colour: lightgrey;
+  --header-font-colour: rebeccapurple;
+}
+
+.lightMode {
+  --bg-colour: white;
+  --secondary-bg-colour: rgb(238, 233, 233);
+  --font-colour: black;
+  --secondary-font-colour: rgb(45, 43, 43);
+  --header-font-colour: rebeccapurple;
+}
+
 .journey {
   position: relative;
   width: 250px;
@@ -41,22 +57,6 @@ body {
 
 .portfolio .journey::before {
   left: -38px;
-}
-
-:root {
-  --bg-colour: black;
-  --secondary-bg-colour: rgb(24, 24, 24);
-  --font-colour: white;
-  --secondary-font-colour: lightgrey;
-  --header-font-colour: rebeccapurple;
-}
-
-.lightMode {
-  --bg-colour: white;
-  --secondary-bg-colour: rgb(238, 233, 233);
-  --font-colour: black;
-  --secondary-font-colour: rgb(45, 43, 43);
-  --header-font-colour: rebeccapurple;
 }
 
 /* Header Styles */
@@ -650,7 +650,7 @@ button:focus {
 
 /* Responsive */
 
-/* Extra breakpoint */
+/* Extra breakpoint for the box shadow effect on my photo image */
 @media (max-width: 998px) {
   /* .myPhoto {
     padding: 10px;
@@ -681,6 +681,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+    padding-top: 0;
   }
 
   .portfolioImage {
@@ -786,10 +787,3 @@ button:focus {
 @media (max-width: 480px) {
 }
 
-.hidden {
-  display: none;
-}
-
-.highlight {
-  color: rebeccapurple;
-}
