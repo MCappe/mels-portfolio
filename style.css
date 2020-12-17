@@ -281,8 +281,8 @@ header h2:nth-of-type(2) {
   border: 3px solid rebeccapurple;
   display: block;
   position: absolute;
-  top: -25px;
-  left: -25px;
+  top: -20px;
+  left: -20px;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
 }
@@ -651,31 +651,22 @@ button:focus {
 /* Responsive */
 
 /* Extra breakpoint for the box shadow effect on my photo image */
+@media (max-width:1110px) {
+
+}
+
 @media (max-width: 998px) {
-  /* .myPhoto {
-    padding: 10px;
-    position: relative;
-  }
-
-  .myPhoto * {
-    position: relative;
-  }
-
-  .myPhoto::before {
-    content: '';
-    background-color: transparent;
-    border: 3px solid rebeccapurple;
-    display: block;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
+  /* .myPhoto::before {
+    height: calc(100% - 140px);
   } */
 }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  /* .myPhoto::before {
+    height: calc(100% - 140px);
+  } */
+
 
   .portfolioShowcase {
     flex-direction: column;
@@ -790,7 +781,7 @@ button:focus {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   footer {
-    height: 100vh;
+    height: 100%;
   }
 
 }
