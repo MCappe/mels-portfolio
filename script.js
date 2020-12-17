@@ -23,7 +23,7 @@ $(function () {
 
   function modeSwitch() {
     isLight = !isLight;
-    isLight ? toggle.innerText = '🌞' : toggle.innerText = '🌚';
+    isLight ? toggle.innerText = 'Light' : toggle.innerText = 'Dark';
     const rootElement = document.body;
     rootElement.classList.toggle('lightMode');
   }
