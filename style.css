@@ -242,7 +242,7 @@ header h2:nth-of-type(2) {
   color: var(--header-font-colour);
   font-family: 'Playfair Display', serif;
   text-align: center;
-  line-height: 2rem;
+  line-height: 2.3rem;
   font-size: 2.5rem;
   padding-bottom: 50px;
 }
@@ -264,8 +264,8 @@ header h2:nth-of-type(2) {
 .myPhoto img {
   width: 100%;
   height: auto;
-  max-width: 575px;
-  box-shadow: -20px -20px var(--header-font-colour);
+  max-width: 450px;
+  box-shadow: -10px -10px var(--header-font-colour);
 }
 
 /* .myPhoto {
