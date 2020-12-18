@@ -103,7 +103,7 @@ header p {
 }
 
 .highlight {
-  color: rebeccapurple;
+  color: var(--header-font-colour);
 }
 
 .fa-bars {
@@ -130,12 +130,14 @@ header a {
   font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 0.1rem;  
+  
 }
 
 header li a:hover,
 header li a:focus {
   padding-bottom: 5px;
-  border-bottom: 3px solid var(--header-font-colour);
+  color: var(--header-font-colour);
+  /* border-bottom: 3px solid var(--header-font-colour); */
 }
 
 header nav li {
@@ -146,6 +148,13 @@ header nav li {
 header ul {
   padding-top: 40px;
 }
+
+/* .headerNav {
+  background-color: var(--secondary-bg-colour);
+  position: fixed;
+  z-index: 10;
+  right: 50px;
+} */
 
 .navItem {
   cursor: pointer;
@@ -330,6 +339,7 @@ header h2:nth-of-type(2) {
   list-style: none;
   display: inline;
   padding: 10px;
+  line-height: 4rem;
 }
 
 .skillsList {
