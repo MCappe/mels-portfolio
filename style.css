@@ -346,6 +346,7 @@ hr {
   color: var(--font-colour);
   text-align: center;
   padding-top: 50px;
+  /* height: 100vh; */
 }
 
 .portfolioHeading {
@@ -369,12 +370,13 @@ hr {
 .portfolio p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+  margin-bottom: 50px;
 }
 
-.portfolioPieces {
+/* .portfolioPieces {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .portfolioPieces i {
   font-size: 5rem;
