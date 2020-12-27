@@ -277,27 +277,6 @@ header h2:nth-of-type(2) {
   box-shadow: -10px -10px var(--header-font-colour);
 }
 
-/* .myPhoto {
-  padding: 10px;
-  position: relative;
-}
-
-.myPhoto * {
-  position: relative;
-}
-
-.myPhoto::before {
-  content: '';
-  background-color: transparent;
-  border: 3px solid rebeccapurple;
-  display: block;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-} */
-
 .whoAmI p:first-child {
   color: var(--font-colour);
   font-family: 'Montserrat', sans-serif;
@@ -338,15 +317,17 @@ header h2:nth-of-type(2) {
   color: var(--font-colour);
   list-style: none;
   display: inline;
-  padding: 10px;
-  line-height: 4rem;
+  padding: 15px;
+  line-height: 4.5rem;
 }
 
-.skillsList {
+.lineOne,
+.lineTwo {
   text-align: center;
-  padding: 50px 0;
+  padding: 0 0 50px 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
 .skillsList li:hover,
@@ -355,7 +336,7 @@ header h2:nth-of-type(2) {
 }
 
 hr {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 /* Section 4 styles: portfolio */
@@ -670,26 +651,8 @@ button:focus {
 
 /* Responsive */
 
-/* Extra breakpoint for the box shadow effect on my photo image */
-@media (max-width:1110px) {
-  /* .myPhoto::before {
-    display: none;
-} */
-
-}
-
-@media (max-width: 998px) {
-  /* .myPhoto::before {
-    height: calc(100% - 140px);
-  } */
-}
-
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  /* .myPhoto::before {
-    height: calc(100% - 140px);
-  } */
-
 
   .portfolioShowcase {
     flex-direction: column;
@@ -726,18 +689,6 @@ button:focus {
     justify-content: center;
   }
 
-  /* .myPhoto::before {
-  content: '';
-  background-color: transparent;
-  border: 3px solid rebeccapurple;
-  display: block;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-} */
-
   .flexContainer1 {
     flex-direction: column;
     align-items: center;
@@ -755,13 +706,18 @@ button:focus {
   }
 
   .skillsList li {
-    display: block;
+    /* display: block; */
     font-size: 3rem;
     padding-left: 0;
   }
 
   .skillsList ul {
     padding-left: 0;
+  }
+
+  .lineOne li,
+  .lineTwo li {
+    font-size: 2rem;
   }
 
   .portfolioPieces {
