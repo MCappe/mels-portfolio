@@ -375,22 +375,25 @@ hr {
 
 .pieceOne img,
 .pieceTwo img,
-.pieceThree img {
-  width: 350px;
-  height: auto;
+.pieceThree img,
+.pieceFour img {
+  width: 300px;
+  height: 200px;
   cursor: pointer;
 }
-
-/* .pieceOne a,
-.pieceTwo a,
-.pieceThree a {
-  cursor: pointer;
-} */
 
 .portfolioPieces {
   display: flex;
   justify-content: center;
   padding-bottom: 80px;
+}
+
+.pieceOne {
+  padding-right: 15px;
+}
+
+.pieceThree {
+  padding-left: 15px;
 }
 
 /* .portfolioPieces i {
