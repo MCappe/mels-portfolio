@@ -373,12 +373,27 @@ hr {
   margin-bottom: 50px;
 }
 
-/* .portfolioPieces {
-  display: flex;
-  justify-content: space-between;
+.pieceOne img,
+.pieceTwo img,
+.pieceThree img {
+  width: 350px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* .pieceOne a,
+.pieceTwo a,
+.pieceThree a {
+  cursor: pointer;
 } */
 
-.portfolioPieces i {
+.portfolioPieces {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+/* .portfolioPieces i {
   font-size: 5rem;
   color: var(--secondary-font-colour);
   margin: 50px 0;
@@ -387,7 +402,7 @@ hr {
 .portfolioPieces i:hover,
 .portfolioPieces i:focus {
   color: var(--header-font-colour);
-}
+} */
 
 /* Portfolio Pages Styling */
 
