@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="portfolioPages">
+    <div class="wrapper">
+      <div class="logoAndNavContainer">
+        <div class="topLogo">
+          <p>Melissa</p>
+        </div>
+
+        <label for="toggle"><i class="fas fa-bars" id="bars" aria-label="click for the menu"></i></label>
+        <div class="headerNav">
+          <nav>
+            <ul>
+              <li><a href="../index.html#home" aria-label="home">Home</a></li>
+              <li><a href="../index.html#about" aria-label="about">About</a></li>
+              <li><a href="../index.html#portfolio" aria-label="portfolio">Portfolio</a></li>
+              <li><a href="../index.html#contact" aria-label="contact">Contact</a></li>
+              <li class="navItem" id="toggle" aria-label="toggle between light and dark mode"
+                title="Toggle between light and dark mode"><i class="fas fa-toggle-on"></i></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="headerNav2 hidden">
+          <nav>
+            <ul>
+              <li><a href="../index.html#home" aria-label="home">Home</a></li>
+              <li><a href="../index.html#about" aria-label="about">About</a></li>
+              <li><a href="../index.html#portfolio" aria-label="portfolio">Portfolio</a></li>
+              <li><a href="../index.html#contact" aria-label="contact">Contact</a></li>
+              <li class="navItem" id="toggle2" aria-label="toggle between light and dark mode"
+                title="Toggle between light and dark mode"><i class="fas fa-toggle-on"></i></li>
+            </ul>
+          </nav>
+        </div>
+
+
+      </div>
+
+      <div class="portfolioShowcase">
+        <div class="portfolioImage">
+          <img src="../assets/triviaApp.png" alt="Trivia App screenshot">
+        </div>
+        <div class="portfolioInfo">
+          <h2>Vanilla Javascript Quiz</h2>
+          <h5>Javascipt | HTML | CSS</h5>
+          <p>Quiz application with 10 random questions. Created using Javascript</p>
+          <a href="https://mcappe.github.io/trivia-app/" target="_blank" class="live"
+            aria-label="live link to project">LIVE LINK</a>
+          <a href="https://github.com/MCappe/trivia-app" target="_blank" class="github"
+            aria-label="github repo to project">GITHUB REPO</a>
+        </div>
+      </div>
+      <div class="next">
+        <a href="pieceThree.html"><i class="fas fa-arrow-circle-left" aria-label="go back"></i></a>
+        <a href="../index.html#portfolio"><i class="fas fa-arrow-circle-right" aria-label="next project"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <footer class="portfolioPagesFooter">
+    <p class="copyright">© <a href="mailto:melissacappe@gmail.com" aria-label="email me">Melissa Cappe</a> | 2020</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+
+</html>
