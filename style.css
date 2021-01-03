@@ -380,6 +380,16 @@ hr {
   cursor: pointer;
 }
 
+.pieceOne,
+.pieceThree {
+  margin-right: 50px;
+}
+
+.pieceTwo,
+.pieceFour {
+  margin-left: 50px;
+}
+
 .portfolioPieces {
   display: flex;
   justify-content: center;
@@ -394,17 +404,6 @@ hr {
 .break {
   font-size: 0.7rem;
 }
-
-/* .portfolioPieces i {
-  font-size: 5rem;
-  color: var(--secondary-font-colour);
-  margin: 50px 0;
-}
-
-.portfolioPieces i:hover,
-.portfolioPieces i:focus {
-  color: var(--header-font-colour);
-} */
 
 /* Portfolio Pages Styling */
 
