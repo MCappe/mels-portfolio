@@ -171,8 +171,6 @@ header ul {
   color: var(--header-font-colour);
 }
 
-
-
 .headerTextContainer {
   padding-bottom: 100px;
 }
@@ -385,15 +383,16 @@ hr {
 .portfolioPieces {
   display: flex;
   justify-content: center;
+}
+
+.portfolioPieces2 {
+  display: flex;
+  justify-content: center;
   padding-bottom: 80px;
 }
 
-.pieceOne {
-  padding-right: 15px;
-}
-
-.pieceThree {
-  padding-left: 15px;
+.break {
+  font-size: 0.7rem;
 }
 
 /* .portfolioPieces i {
@@ -740,7 +739,8 @@ button:focus {
     font-size: 2rem;
   }
 
-  .portfolioPieces {
+  .portfolioPieces,
+  .portfolioPieces2 {
     flex-direction: column;
   }
 
