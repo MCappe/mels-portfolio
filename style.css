@@ -27,7 +27,7 @@ body {
   --secondary-bg-colour: rgb(24, 24, 24);
   --font-colour: white;
   --secondary-font-colour: lightgrey;
-  --header-font-colour: rebeccapurple;
+  --header-font-colour: #B894E0;
 }
 
 .lightMode {
@@ -35,7 +35,7 @@ body {
   --secondary-bg-colour: rgb(238, 233, 233);
   --font-colour: black;
   --secondary-font-colour: rgb(45, 43, 43);
-  --header-font-colour: rebeccapurple;
+  --header-font-colour: #B894E0;
 }
 
 .journey {
