@@ -35,7 +35,7 @@ body {
   --secondary-bg-colour: rgb(238, 233, 233);
   --font-colour: black;
   --secondary-font-colour: rgb(45, 43, 43);
-  --header-font-colour: #B894E0;
+  --header-font-colour: rebeccapurple;
 }
 
 .journey {
@@ -294,7 +294,7 @@ header h2:nth-of-type(2) {
 }
 
 .whoAmI a {
-  border: 2px solid rebeccapurple;
+  border: 2px solid var(--header-font-colour);
   text-decoration: none;
   border-radius: 25px;
   background-color: transparent;
@@ -781,6 +781,11 @@ button:focus {
     visibility: visible;
     position: fixed;
     z-index: 10;
+  }
+
+  .fa-bars:hover,
+  .fa-bars:focus {
+    color: var(--header-font-colour);
   }
 
   .headerNav2 {

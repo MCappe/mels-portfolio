@@ -27,8 +27,6 @@ $(function () {
     rootElement.classList.toggle('lightMode');
   }
 
-  // $('.myForm').reset();
-
 })
 
 
