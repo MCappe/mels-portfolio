@@ -738,6 +738,16 @@ button:focus {
     font-size: 2rem;
   }
 
+  .pieceOne,
+  .pieceThree {
+    margin-right: 0;
+  }
+
+  .pieceTwo,
+  .pieceFour {
+    margin-left: 0;
+  }
+
   .portfolioPieces,
   .portfolioPieces2 {
     flex-direction: column;
